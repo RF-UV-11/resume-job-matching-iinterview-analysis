@@ -1,0 +1,66 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment directories
+venv/
+env/
+.venv/
+ENV/
+*.env
+myenv
+
+# IDE and editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python distribution packages
+build/
+dist/
+*.egg-info/
+
+# Logs and temporary files
+*.log
+logs/
+*.tmp
+*.bak
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Pytest cache
+.cache/
+
+# Local configuration files
+*.local
+
+# Python test cache files
+.pytest_cache/
+
+# Database files (e.g., SQLite)
+*.db
+*.sqlite3
+
+# Environment variable files
+.env
+
+# Flake8, pylint, and other linters
+*.flake8
+*.pylintrc
+
+# Coverage files
+.coverage
+*.coverage
+nosetests.xml
+coverage.xml
+*.hypothesis/
+
+# pytest, unittest, and other test-related artifacts
+*.tests

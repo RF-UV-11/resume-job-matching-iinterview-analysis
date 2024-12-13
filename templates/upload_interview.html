@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Interview Video</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Your Interview Video</h1>
+        <form id="uploadForm" action="{{ url_for('analyze_video') }}" method="POST" enctype="multipart/form-data">
+            <input type="file" name="video" accept="video/*" required>
+            <button type="submit" class="submit-button">Upload</button>
+        </form>
+
+        <!-- Spinner for Loading -->
+        <div id="loadingSpinner" class="loader" style="display:none;"></div>
+
+        <!-- Optional message to show when data is processing -->
+        <p id="loadingMessage" style="display:none;">Processing... Please wait.</p>
+    </div>
+
+    <script>
+        // Show the spinner and loading message when the form is submitted
+        const form = document.getElementById('uploadForm');
+        form.addEventListener('submit', function(event) {
+            // Show spinner and message
+            document.getElementById('loadingSpinner').style.display = 'block';
+            document.getElementById('loadingMessage').style.display = 'block';
+
+            // Optionally, disable the form to prevent further submissions
+            form.querySelector('button').disabled = true;
+        });
+    </script>
+</body>
+</html>

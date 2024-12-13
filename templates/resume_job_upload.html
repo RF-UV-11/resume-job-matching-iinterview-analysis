@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume & Job Description Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Resume and Job Description</h1>
+        
+        <form id="uploadForm" action="{{ url_for('analyze_resume_job') }}" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="resume">Upload Resume:</label>
+                <input type="file" name="resume" id="resume" required>
+            </div>
+
+            <div class="form-group">
+                <label for="job_description">Upload Job Description:</label>
+                <input type="file" name="job_description" id="job_description" required>
+            </div>
+
+            <button type="submit" class="submit-button">Analyze</button>
+        </form>
+
+        <!-- Spinner for Loading -->
+        <div id="loadingSpinner" class="loader" style="display:none;"></div>
+
+        <!-- Optional message to show when data is processing -->
+        <p id="loadingMessage" style="display:none;">Processing... Please wait.</p>
+    </div>
+
+    <script>
+        // Show the spinner and loading message when the form is submitted
+        const form = document.getElementById('uploadForm');
+        form.addEventListener('submit', function(event) {
+            // Show spinner and message
+            document.getElementById('loadingSpinner').style.display = 'block';
+            document.getElementById('loadingMessage').style.display = 'block';
+
+            // Optionally, disable the form to prevent further submissions
+            form.querySelector('button').disabled = true;
+        });
+    </script>
+</body>
+</html>
