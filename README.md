@@ -35,7 +35,9 @@ This project provides an **Interview Analysis and Job Matching System**, which p
 ├── README.md                      # Documentation for the project
 ├── app.py                         # Main application script
 ├── assets/                        # Assets used in the project
-│   └── images/                    # Placeholder for images or UI assets
+│   ├── images/                    # Placeholder for images or UI assets
+|   ├── videos/
+|       ├── demo.mp4               # Demo video of WebApp
 ├── data/                          # Sample data files
 │   └── interview_video.mp4        # Example video for testing
 ├── logs/                          # Log files for debugging and analysis
