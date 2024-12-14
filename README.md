@@ -17,7 +17,7 @@ This project provides an **Interview Analysis and Job Matching System**, which p
 
 Check out how the system works in action:
 
-[![Demo Video]](https://github.com/RF-UV-11/resume-job-matching-iinterview-analysis/tree/main/assets/videos/demo.mp4)
+[!Demo Video](https://github.com/RF-UV-11/resume-job-matching-iinterview-analysis/tree/main/assets/videos/demo.mp4)
 
 ---
 
