@@ -149,5 +149,4 @@ print("Traits:", result['traits'])
 - [Hugging Face](https://huggingface.co/) for their pre-trained transformer models.
 - [FAISS](https://faiss.ai/) for efficient similarity search.
 - [MoviePy](https://zulko.github.io/moviepy/) for video and audio processing.
-
 ---
