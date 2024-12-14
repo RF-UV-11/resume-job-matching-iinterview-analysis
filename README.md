@@ -1,3 +1,5 @@
+---
+
 # Interview Analysis and Job Matching System 🎥📄
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)](https://www.python.org/)
@@ -8,6 +10,14 @@
 [![License](https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge)](LICENSE)
 
 This project provides an **Interview Analysis and Job Matching System**, which processes interview videos to extract meaningful insights and matches candidates' profiles with job descriptions. It utilizes **machine learning models**, **natural language processing (NLP)**, and **FAISS** for efficient embeddings storage and retrieval.
+
+---
+
+## 🎥 Demo Video
+
+Check out how the system works in action:
+
+[![Demo Video]](https://github.com/RF-UV-11/resume-job-matching-iinterview-analysis/tree/main/assets/videos/demo.mp4)
 
 ---
 
@@ -36,6 +46,8 @@ This project provides an **Interview Analysis and Job Matching System**, which p
 ├── app.py                         # Main application script
 ├── assets/                        # Assets used in the project
 │   └── images/                    # Placeholder for images or UI assets
+├── demo/                          # Demo video files
+│   └── demo_video.mp4             # Demo video for showcasing the project
 ├── data/                          # Sample data files
 │   └── interview_video.mp4        # Example video for testing
 ├── logs/                          # Log files for debugging and analysis
@@ -105,23 +117,6 @@ Located in `modules/job_matching/`:
 
 ---
 
-## 📝 Example Usage
-
-```python
-from modules.interview_analyzer.interview_summarize import VideoProcessor
-
-# Initialize the processor
-processor = VideoProcessor()
-
-# Process a sample video
-result = processor.process_video('data/interview_video.mp4')
-
-# Print the transcript and summary
-print("Transcript:", result['transcript'])
-print("Summary:", result['summary'])
-print("Traits:", result['traits'])
-```
-
 ---
 
 ## 🛠️ Future Improvements
@@ -149,5 +144,4 @@ print("Traits:", result['traits'])
 - [Hugging Face](https://huggingface.co/) for their pre-trained transformer models.
 - [FAISS](https://faiss.ai/) for efficient similarity search.
 - [MoviePy](https://zulko.github.io/moviepy/) for video and audio processing.
-
 ---
